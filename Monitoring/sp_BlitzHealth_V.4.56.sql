@@ -419,7 +419,7 @@
 			'</td>
 
 			<td align = "right" width = "50%" bgcolor = "#FFFFFF" height = "50" style = "padding: 5px 5px 5px 5px;">
-				<a href = "" title = ""><img src = "cid:intellinova_logo5.png" width = "50" height = "50"></a>
+				<a href = "" title = ""><img src = "cid:logo.png" width = "50" height = "50"></a>
 			</td>
 		</tr>
 	</table>

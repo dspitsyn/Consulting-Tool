@@ -1983,7 +1983,7 @@
 	--------------------------------------------------------------------------------
 	SELECT @TableHTML =  @TableHTML +  '</table>' +
 		'<p style = "margin-top: 0; margin-bottom: 0">&nbsp;</p>
-		<p>IntelliNOVA Support</p>
+		<p>Support Team</p>
 		</main>'
 	--------------------------------------------------------------------------------
 	--| End HTML Footer

@@ -1,5 +1,6 @@
 /*
     | https://www.sqlshack.com/insight-into-the-sql-server-buffer-cache/
+    | https://www.sqlskills.com/blogs/jonathan/finding-what-queries-in-the-plan-cache-use-a-specific-index/
 */
 SELECT objects.name AS object_name
   , objects.type_desc AS object_type_description

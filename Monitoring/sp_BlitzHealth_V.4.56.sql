@@ -98,7 +98,7 @@
 					# 2.2 - Prove local full backups system databases within past 24 hours
 					# 1.1 - Ensure Latest SQL Server Service Packs and Hotfixes are Installed
 
-			SQL Server Version: 2016/2017
+			SQL Server Version: 2017 (some points from current script must be extended for other versions)
 		';
 
 	RETURN

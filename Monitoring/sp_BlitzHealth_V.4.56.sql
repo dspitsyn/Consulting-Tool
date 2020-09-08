@@ -42,8 +42,6 @@
 				Following solution introduced in order for SQL Server DBAs to streamline, prioritize, and simplify SQL Server monitoring.
 
 			Version Updates:
-				29.08.2020: | Added by Dmitry Spitsyn
-					# Cleanup query
 				03.08.2020: | Added by Dmitry Spitsyn
 					# 10.8 - Extend Memory Allocation query and message
 				31.07.2020: | Added by Dmitry Spitsyn

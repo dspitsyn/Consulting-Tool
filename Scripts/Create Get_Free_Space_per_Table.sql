@@ -1,5 +1,7 @@
-SELECT
-  	objects.name AS object_name
+/*
+    | https://www.sqlshack.com/insight-into-the-sql-server-buffer-cache/
+*/
+SELECT objects.name AS object_name
   , objects.type_desc AS object_type_description
   , COUNT(*) AS buffer_cache_pages
   , CAST(COUNT(*) * 8 AS DECIMAL) / 1024  AS buffer_cache_total_MB

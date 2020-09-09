@@ -4,6 +4,7 @@
   | measures performance before and after, nor do they take into account the time and resources
   | taken to perform the maintenance against any gains that may have occurred.
   | For thresholds, we usually recommend 50% to reorganize, 80% to rebuild, and for larger databases, only tables with a page count > 5000.
+  | Make sure that CommandLog table exists in msdb database.
 */
 WITH im AS (
 SELECT DatabaseName
@@ -12,9 +13,9 @@ SELECT DatabaseName
   , EndTime
   , DATEDIFF(SECOND, StartTime, EndTime) AS Index_Minutes
   , IndexName
-FROM master.dbo.CommandLog
+FROM msdb.dbo.CommandLog
 WHERE CommandType LIKE '%INDEX%'
-AND NOT DatabaseName IN ( 'master', 'msdb', 'model', 'tempdb' )
+  AND NOT DatabaseName IN ( 'master', 'msdb', 'model', 'tempdb' )
 )
 SELECT t.name
   , i.name AS IndexName

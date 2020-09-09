@@ -7,6 +7,17 @@
 		This script creates a maintenance jobs (State: 26 January 2020).
 		Any updates will be included in next release.
 
+	| Configure and schedule regular maintenance for all of the following:
+	| • Full (and possibly differential) backups
+	| • Log backups (for databases in Full recovery model)
+	| • CheckDB
+	| • Index maintenance
+	| Don't forget that your system databases need backup and CheckDB also!
+	| Options for seting up maintenance:
+	| A. Use free scripts from Ola Hallengren to create customized SQL Server Agent Jobs:
+	| B. Use SQL Server Maintenance Plans if you'd like a graphical user interface, but just keep in mind that they’re not as flexible and powerful as Ola's scripts. 
+	| For example, they take a shotgun approach to index maintenance – they'll rebuild all of the indexes, every time, whether there's any fragmentation or not. 
+
 	| Version Updates:
 		02.03.2020 | Added by Dmitry Spitsyn
 			# Insert Step: CLEANUP_OUTPUT_AUDITFILES

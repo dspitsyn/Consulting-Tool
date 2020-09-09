@@ -1,11 +1,13 @@
 /*
 	==========================================================================================
 	| File:     Maintenance_Jobs.sql
-	| Version:	2001.122003 - January, 2020
+	| Version:  2001.122003 - January, 2020
 
-	|Summary:  	
-		This script creates a maintenance jobs (State: 26 January 2020).
-		Any updates will be included in next release.
+	| Summary:  	
+	| This script will create maintenance job incl. standard steps (State: 26 January 2020) which can be used in any environment
+	| Before execution, please execute the following script: 
+	| https://github.com/dspitsyn/Consulting-Tool/blob/master/Maintenance%20Solution/Version%2020.01/MaintenanceSolution.V.2001.sql
+	| Any updates will be included in next release.
 
 	| Configure and schedule regular maintenance for all of the following:
 	| • Full (and possibly differential) backups
@@ -14,8 +16,8 @@
 	| • Index maintenance
 	| Don't forget that your system databases need backup and CheckDB also!
 	| Options for seting up maintenance:
-	| A. Use free scripts from Ola Hallengren to create customized SQL Server Agent Jobs:
-	| B. Use SQL Server Maintenance Plans if you'd like a graphical user interface, but just keep in mind that they’re not as flexible and powerful as Ola's scripts. 
+	| A. Use free scripts from Ola Hallengren to create customized SQL Server Agent Jobs: htp://ola.hallengren.com/
+	| B. Use SQL Server Maintenance Plans if you'd like a graphical user interface, but just keep in mind that they're not as flexible and powerful as Ola's scripts. 
 	| For example, they take a shotgun approach to index maintenance – they'll rebuild all of the indexes, every time, whether there's any fragmentation or not. 
 
 	| Version Updates:

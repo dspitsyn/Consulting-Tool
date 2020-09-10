@@ -1,6 +1,7 @@
 /*
 	| Delete existing Managed Service Operator(s)
 */
+
 IF EXISTS ( SELECT name FROM msdb.dbo.sysoperators WHERE name LIKE N'%INA%' )
 	BEGIN
 		EXEC msdb.dbo.sp_delete_operator @name = N'INA.MASRV'

@@ -1,7 +1,6 @@
 /*
-
-SQL Server Maintenance Solution - SQL Server 2008, SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016, SQL Server 2017, and SQL Server 2019
-Version: 2020-01-26 14:06:53
+  | SQL Server Maintenance Solution - SQL Server 2008, SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016, SQL Server 2017, and SQL Server 2019
+  | Version: 2020-01-26 14:06:53
 
 */
 

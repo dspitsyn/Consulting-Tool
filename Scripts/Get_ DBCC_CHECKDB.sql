@@ -1,5 +1,5 @@
 /*
-  | If you’ve been running DBCC CHECKDB with Ola Hallengren's scripts, it's easy to find out how
+  | If you've been running DBCC CHECKDB with Ola Hallengren's scripts, it's easy to find out how
   | long they take (as long as you're logging the commands to a table -- this is the default). 
   | This script will take the CommandLog table that Ola's jobs populate as they run and joins them
   | to backup information to obtain size data.

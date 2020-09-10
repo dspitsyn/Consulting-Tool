@@ -115,24 +115,6 @@ GO
 		, [Target Achieved] NVARCHAR(128)
 	)
 
-/*
-	IF OBJECT_ID('tempdb..#HardeningResults') IS NOT NULL
-		DROP TABLE #HardeningResults;
-	IF @HardeningResults = 1
-	BEGIN
-		CREATE TABLE #HardeningResults (
-			  [ID] INT IDENTITY(1, 1)
-			, [FindingID] NVARCHAR(5)
-			, [Severity] TINYINT
-			, [Name] NVARCHAR(MAX)
-			, [Current Setting] NVARCHAR(128)
-			, [Target Setting] NVARCHAR(128)
-			, [Target Achieved] NVARCHAR(128)
-			, [Details] NVARCHAR(MAX)
-		);
-	END
-*/
-
 	IF OBJECT_ID('tempdb..#GlobalServerSettings') IS NOT NULL
 		DROP TABLE #GlobalServerSettings;
 	CREATE TABLE #GlobalServerSettings (

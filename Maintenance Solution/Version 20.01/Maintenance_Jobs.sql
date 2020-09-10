@@ -988,8 +988,8 @@ BEGIN
 				, @on_fail_action = 3
 		END
 
-	-- Step 3
-	-- Changes by Dmitry Spitsyn in step 'ST03: OPTIMIZE_INDEX_MSDB'
+		-- Step 3
+		-- Changes by Dmitry Spitsyn in step 'ST03: OPTIMIZE_INDEX_MSDB'
 
 		EXEC msdb.dbo.sp_add_jobstep 
 			  @job_name = @JobNameMaintenanceSolution
@@ -1003,8 +1003,8 @@ BEGIN
 			, @retry_interval = 0 
 			, @on_fail_action = 3
 
-	-- Step 4
-	-- Changes by Dmitry Spitsyn in step 'ST04: CLEANUP_BACKUP_HISTORY'
+		-- Step 4
+		-- Changes by Dmitry Spitsyn in step 'ST04: CLEANUP_BACKUP_HISTORY'
 
 		EXEC msdb.dbo.sp_add_jobstep 
 			  @job_name = @JobNameMaintenanceSolution
@@ -1016,8 +1016,8 @@ BEGIN
 			, @on_success_action = 3
 			, @on_fail_action = 3
 
-	-- Step 5
-	-- Changes by Dmitry Spitsyn in step 'ST05: CLEANUP_TABLE_COMMANDLOG'
+		-- Step 5
+		-- Changes by Dmitry Spitsyn in step 'ST05: CLEANUP_TABLE_COMMANDLOG'
 
 		EXEC msdb.dbo.sp_add_jobstep 
 			  @job_name = @JobNameMaintenanceSolution
@@ -1029,8 +1029,8 @@ BEGIN
 			, @on_success_action = 3
 			, @on_fail_action = 3
 
-	-- Step 6
-	-- Changes by Dmitry Spitsyn in step 'ST06: CLEANUP_JOB_HISTORY'
+		-- Step 6
+		-- Changes by Dmitry Spitsyn in step 'ST06: CLEANUP_JOB_HISTORY'
 
 		EXEC msdb.dbo.sp_add_jobstep 
 			  @job_name = @JobNameMaintenanceSolution
@@ -1042,8 +1042,8 @@ BEGIN
 			, @on_success_action = 3
 			, @on_fail_action = 3
 
-	-- Step 7
-	-- Changes by Dmitry Spitsyn in step 'ST07: CLEANUP_MESSAGES'
+		-- Step 7
+		-- Changes by Dmitry Spitsyn in step 'ST07: CLEANUP_MESSAGES'
 
 		EXEC msdb.dbo.sp_add_jobstep 
 			  @job_name = @JobNameMaintenanceSolution
@@ -1055,8 +1055,8 @@ BEGIN
 			, @on_success_action = 3
 			, @on_fail_action = 3
 
-	-- Step 8
-	-- Changes by Dmitry Spitsyn in step 'ST08: CLEANUP_OUTPUT_TXTFILES'
+		-- Step 8
+		-- Changes by Dmitry Spitsyn in step 'ST08: CLEANUP_OUTPUT_TXTFILES'
 
 		EXEC msdb.dbo.sp_add_jobstep 
 			  @job_name = @JobNameMaintenanceSolution
@@ -1068,8 +1068,8 @@ BEGIN
 			, @on_success_action = 3
 			, @on_fail_action = 3
 
-	-- Step 9
-	-- Changes by Dmitry Spitsyn in step 'ST09: CLEANUP_OUTPUT_AUDITFILES'
+		-- Step 9
+		-- Changes by Dmitry Spitsyn in step 'ST09: CLEANUP_OUTPUT_AUDITFILES'
 
 		EXEC msdb.dbo.sp_add_jobstep 
 			  @job_name = @JobNameMaintenanceSolution
@@ -1081,8 +1081,8 @@ BEGIN
 			, @on_success_action = 3
 			, @on_fail_action = 3
 
-	-- Step 10
-	-- Changes by Dmitry Spitsyn in step 'ST10: CHECK_STEPS_ERRORS'
+		-- Step 10
+		-- Changes by Dmitry Spitsyn in step 'ST10: CHECK_STEPS_ERRORS'
 
 		EXEC msdb.dbo.sp_add_jobstep 
 			  @job_name = @JobNameMaintenanceSolution

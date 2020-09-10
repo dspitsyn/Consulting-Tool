@@ -9,6 +9,7 @@
 	| Version Updates:
 		26.01.2016 | Added by Dmitry Spitsyn
 			# GET AND EXCLUDE ALL SHAREPOINT DATABASES
+
 */
 CREATE TABLE #SPDB (databasename sysname PRIMARY KEY CLUSTERED);
 INSERT INTO #SPDB (databasename)

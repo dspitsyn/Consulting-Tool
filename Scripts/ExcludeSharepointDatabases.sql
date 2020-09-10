@@ -1,5 +1,4 @@
 /*
-	==========================================================================================
 	| File:     ExcludeSharepointDatabases.sql
 	| Version:  16.01 - January, 2016
 
@@ -9,8 +8,7 @@
 
 	| Version Updates:
 		26.01.2016 | Added by Dmitry Spitsyn
-			# GET AND EXCLUDE SHAREPOINT DATABASES
-	==========================================================================================
+			# GET AND EXCLUDE ALL SHAREPOINT DATABASES
 */
 CREATE TABLE #SPDB (databasename sysname PRIMARY KEY CLUSTERED);
 INSERT INTO #SPDB (databasename)

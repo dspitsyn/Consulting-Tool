@@ -6,6 +6,7 @@
   | For thresholds, we usually recommend 50% to reorganize, 80% to rebuild, and for larger databases, only tables with a page count > 5000.
   | Make sure that CommandLog table exists in msdb database.
 */
+
 WITH im AS (
 SELECT DatabaseName
   , Command

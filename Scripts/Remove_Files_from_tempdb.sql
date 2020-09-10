@@ -1,5 +1,4 @@
 /*
-	| Remove Files From tempdb
 	| Some tips for minimizing tempdb utilization
 	| 1. Use fewer #temp tables and @table variables
 	| 2. Minimize concurrent index maintenance, and avoid the SORT_IN_TEMPDB option if it isn't needed

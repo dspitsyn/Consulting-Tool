@@ -6,15 +6,13 @@
 		Any updates will be included in next release.
 
 	Version Updates:
-	16.03.2020: | Added by Dmitry Spitsyn
+	22.03.2020: | Added by Dmitry Spitsyn
 		# Configure structure with two tables as result
-
-
 	16.03.2020: | Added by Dmitry Spitsyn
 		# 1 Installation, Updates and Patches
 		# 1.1	Ensure Latest SQL Server Service Packs and Hotfixes are Installed
 		# 1.2	Ensure Single-Function Member Servers are Used
-		# 2 Surface Area Reduction
+		# 2 	Surface Area Reduction
 		# 2.1	Ensure 'Ad Hoc Distributed Queries' Server Configuration Option is set to '0'
 		# 2.2	Ensure 'CLR Enabled' Server Configuration Option is set to '0'
 		# 2.3	Ensure 'Cross DB Ownership Chaining' Server Configuration Option is set to '0'
@@ -32,7 +30,7 @@
 		# 2.15	Ensure 'AUTO_CLOSE' is set to 'OFF' on contained databases
 		# 2.16	Ensure no login exists with the name 'sa'
 		# 2.17	Ensure 'xp_cmdshell' Server Configuration Option is set to '0' - until 2016
-		# 3 Authentication and Authorization
+		# 3 	Authentication and Authorization
 		# 3.1	Ensure 'Server Authentication' Property is set to 'Windows Authentication Mode'
 		# 3.2	Ensure CONNECT permissions on the 'guest' user is Revoked within all SQL Server databases excluding the master, msdb and tempdb
 		# 3.3	Ensure 'Orphaned Users' are Dropped From SQL Server Databases
@@ -44,22 +42,22 @@
 		# 3.9	Ensure Windows BUILTIN groups are not SQL Logins
 		# 3.10	Ensure Windows local groups are not SQL Logins
 		# 3.11	Ensure the public role in the msdb database is not granted access to SQL Agent proxies
-		# 4 Password Policies
+		# 4 	Password Policies
 		# 4.1	Ensure 'MUST_CHANGE' Option is set to 'ON' for All SQL Authenticated Logins
 		# 4.2	Ensure 'CHECK_EXPIRATION' Option is set to 'ON' for All SQL Authenticated Logins Within the Sysadmin Role
 		# 4.3	Ensure 'CHECK_POLICY' Option is set to 'ON' for All SQL Authenticated Logins
-		# 5 Auditing and Logging
+		# 5 	Auditing and Logging
 		# 5.1	Ensure 'Maximum number of error log files' is set to greater than or equal to '12'
 		# 5.2	Ensure 'Default Trace Enabled' Server Configuration Option is set to '1'
 		# 5.3	Ensure 'Login Auditing' is set to 'failed logins'
 		# 5.4	Ensure 'SQL Server Audit' is set to capture both 'failed' and 'successful logins'
-		# 6 Application Development
+		# 6 	Application Development
 		# 6.1	Ensure Database and Application User Input is Sanitized
 		# 6.2	Ensure 'CLR Assembly Permission Set' is set to 'SAFE_ACCESS' for All CLR Assemblies
-		# 7 Encryption
+		# 7 	Encryption
 		# 7.1	Ensure 'Symmetric Key encryption algorithm' is set to 'AES_128' or higher in non-system databases
 		# 7.2	Ensure Asymmetric Key Size is set to 'greater than or equal to 2048' in non-system databases
-		# 8 Appendix: Additional Considerations
+		# 8 	Appendix: Additional Considerations
 		# 8.1	Ensure 'SQL Server Browser Service' is configured correctly
 
 	26.02.2020: | Added by Dmitry Spitsyn
@@ -75,15 +73,11 @@
 	28.08.2019: | Added by Reiner Grosser
 		Some topics are difficult to be selected depending on special verions, 
 		due to unsharpness excluded or not displayed, for example regarding chapter 3. 
-		- several "Authentication and Authorization" topics
-		- Orphaned Users
-		- Encryption
-		Common Bayer Solution also discussed in ICS Audit reagarding SQL CCS Development/Integration and SQL Exception Solution.
+		- several "Authentication and Authorization" topics, Orphaned Users and Encryption
+		Common solution also discussed in ICS Audit reagarding SQL CCS Development/Integration and SQL Exception Solution.
 	01.08.2019: | Added by Dmitry Spitsyn
 		# New structure all queries
-		# P.5.1  - extendet
-		# P.2.16 - extendet
-		# P.3.2  - extendet
+		# P.5.1, P.2.16, P.3.2 - extendet
 		# P.3.4  - deleted (Database authentication applies only from: SQL Server 2012 (11.x))
 	30.07.2019: | Added by Dmitry Spitsyn
 		# 5 Auditing and Logging

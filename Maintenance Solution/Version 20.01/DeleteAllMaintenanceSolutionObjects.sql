@@ -11,19 +11,24 @@ IF EXISTS ( SELECT name FROM msdb.dbo.sysoperators WHERE name LIKE N'%INA%' )
 /*
 	| Delete existing version (Maintenance Solution)
 */
-
 IF OBJECT_ID(N'[msdb].[dbo].[CommandLog]', N'U') IS NOT NULL
 BEGIN
-	DROP TABLE [dbo].[CommandLog]
+	DROP TABLE [msdb].[dbo].[CommandLog]
+	PRINT 'Table [msdb].[dbo].[CommandLog] was successfully dropped.'
 END
 IF OBJECT_ID(N'[msdb].[dbo].[QueueDatabase]', N'U') IS NOT NULL
 BEGIN
-	DROP TABLE [dbo].[QueueDatabase]
+	DROP TABLE [msdb].[dbo].[QueueDatabase]
+	PRINT 'Table [msdb].[dbo].[QueueDatabase] was successfully dropped.'
 END
 IF OBJECT_ID(N'[msdb].[dbo].[Queue]', N'U') IS NOT NULL
 BEGIN
-	DROP TABLE [dbo].[Queue]
+	DROP TABLE [msdb].[dbo].[Queue]
+	PRINT 'Table [msdb].[dbo].[Queue] was successfully dropped.'
 END
+
+USE msdb
+GO
 IF EXISTS ( SELECT * FROM sys.objects WHERE type = 'P' AND name = 'CommandExecute' )
 BEGIN
 	DROP PROCEDURE CommandExecute
@@ -40,19 +45,11 @@ IF EXISTS ( SELECT * FROM sys.objects WHERE type = 'P' AND name = 'IndexOptimize
 BEGIN
 	DROP PROCEDURE IndexOptimize
 END
+
 /*
 	| End delete existing version (Maintenance Solution)
 */
 
-/*
-	| Changes the attributes of a jobs
-*/
-/*
-IF (@jobId IS NOT NULL)
-	BEGIN
-		EXEC msdb.dbo.sp_delete_job @jobId
-	END
-*/
 IF EXISTS ( SELECT name FROM msdb.dbo.sysjobs WHERE name = N'RCN_BACKUP_SYSTEM_DATABASES' )
 	BEGIN
 		EXEC msdb.dbo.sp_delete_job @job_name = N'RCN_BACKUP_SYSTEM_DATABASES'
@@ -77,6 +74,3 @@ IF EXISTS ( SELECT name FROM msdb.dbo.sysjobs WHERE name = N'RCN_STOP_EXECUTION_
 	BEGIN
 		EXEC msdb.dbo.sp_delete_job @job_name = N'RCN_STOP_EXECUTION_RCN_JOBS'
 	END
-/*
-	| End changes the attributes
-*/

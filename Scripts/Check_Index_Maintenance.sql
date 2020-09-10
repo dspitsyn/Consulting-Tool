@@ -1,6 +1,6 @@
 /*
   | This is a terrible way to live life. DBAs and Developers have had the 5% and 30% rule for index
-  | maintenance pounded into their heads for so long that they don’t know any better. No one really
+  | maintenance pounded into their heads for so long that they don't know any better. No one really
   | measures performance before and after, nor do they take into account the time and resources
   | taken to perform the maintenance against any gains that may have occurred.
   | For thresholds, we usually recommend 50% to reorganize, 80% to rebuild, and for larger databases, only tables with a page count > 5000.

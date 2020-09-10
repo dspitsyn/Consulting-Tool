@@ -1,6 +1,6 @@
 /*
   | This query will tell you, for each database, how big it was in MB, how long the full backup took, and the average MB/sec.
-  | Cheap disks aren't good, and good disks aren't cheap.
+  | Cheap hardware disks aren't good, and good disks aren't cheap.
 */
 SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
 DECLARE @startDate DATETIME;

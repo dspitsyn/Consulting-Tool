@@ -27,7 +27,6 @@
 	SELECT @Version = '4.56', @VersionDate = '20200829 15:45:23';
 
 	IF(@VersionCheckMode = 1)
-
 	BEGIN
 		RETURN;
 	END;

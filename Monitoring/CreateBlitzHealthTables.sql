@@ -31,5 +31,12 @@ CREATE TABLE [dbo].[ErrorArchiveCurrent](
 	[Text] [varchar](max) NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
+CREATE TABLE [dbo].[CPUUtilization](
+	[SQLCPUUtilization] [tinyint] NULL,
+	[SystemIdleProcess] [tinyint] NULL,
+	[OtherProcessCPUUtilization] [tinyint] NULL,
+	[EventTime] [datetime] NULL
+) ON [PRIMARY]
+GO
 
 

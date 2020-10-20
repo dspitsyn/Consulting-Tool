@@ -17,7 +17,8 @@
   it is a best practice to avoid modifying any of the existing DDL in the SSISDB database. 
   It is much safer to create your own stored procedure for this, preferably in a new schema that you also create to build 
   some logical and functional separation from the built-in SSIS catalog objects. 
-  You can then create your own SQL Server Agent job that executes this stored procedure.	
+  You can then create your own SQL Server Agent job that executes this stored procedure.
+  https://www.timmitchell.net/post/2018/12/30/clean-up-the-ssis-catalog/
 */
 
 SET NOCOUNT ON
